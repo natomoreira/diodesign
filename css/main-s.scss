@@ -1,0 +1,37 @@
+@import 'typed';
+
+
+.input-wrapper {
+  display: block;
+  > input,
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 200%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    @include typed(
+      "product",
+      "ui/ux",
+      "(e)motion",
+      1.5,
+      (
+        caret-width: 8px,
+        caret-space: 16px,
+        caret-color: #ff3333
+      )
+    );
+  }
+  > input {
+    &:focus,
+    &:active {
+      + .placeholder {
+        display: none;
+      }
+    }
+  }
+}

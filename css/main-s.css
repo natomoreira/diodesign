@@ -1,0 +1,255 @@
+@charset "UTF-8";
+.input-wrapper {
+  display: block;
+}
+.input-wrapper > input,
+.input-wrapper > .placeholder {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 200%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.input-wrapper > .placeholder {
+  pointer-events: none;
+}
+.input-wrapper > .placeholder::before {
+  content: "​";
+  content: "​"/"product";
+  alt: "product";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 8.52s linear 1s infinite forwards;
+}
+.input-wrapper > .placeholder::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 16px;
+  border-right: 8px solid #ff3333;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@keyframes typed-0 {
+  0%, 0.7814726135% {
+    content: "​p";
+    content: "​p"/"product";
+    alt: "product";
+  }
+  0.7824726135%, 1.5639452269% {
+    content: "​pr";
+    content: "​pr"/"product";
+    alt: "product";
+  }
+  1.5649452269%, 2.3464178404% {
+    content: "​pro";
+    content: "​pro"/"product";
+    alt: "product";
+  }
+  2.3474178404%, 3.1288904538% {
+    content: "​prod";
+    content: "​prod"/"product";
+    alt: "product";
+  }
+  3.1298904538%, 3.9113630673% {
+    content: "​produ";
+    content: "​produ"/"product";
+    alt: "product";
+  }
+  3.9123630673%, 4.6938356808% {
+    content: "​produc";
+    content: "​produc"/"product";
+    alt: "product";
+  }
+  4.6948356808%, 21.7517386541% {
+    content: "​product";
+    content: "​product"/"product";
+    alt: "product";
+  }
+  21.7527386541%, 22.3777167449% {
+    content: "​produc";
+    content: "​produc"/"product";
+    alt: "product";
+  }
+  22.3787167449%, 23.0036948357% {
+    content: "​produ";
+    content: "​produ"/"product";
+    alt: "product";
+  }
+  23.0046948357%, 23.6296729264% {
+    content: "​prod";
+    content: "​prod"/"product";
+    alt: "product";
+  }
+  23.6306729264%, 24.2556510172% {
+    content: "​pro";
+    content: "​pro"/"product";
+    alt: "product";
+  }
+  24.2566510172%, 24.881629108% {
+    content: "​pr";
+    content: "​pr"/"product";
+    alt: "product";
+  }
+  24.882629108%, 25.5076071987% {
+    content: "​p";
+    content: "​p"/"product";
+    alt: "product";
+  }
+  25.5086071987%, 33.3323333333% {
+    content: "​";
+    content: "​"/"product";
+    alt: "product";
+  }
+  33.3333333333%, 34.1148059468% {
+    content: "​u";
+    content: "​u"/"product";
+    alt: "product";
+  }
+  34.1158059468%, 34.8972785603% {
+    content: "​ui";
+    content: "​ui"/"product";
+    alt: "product";
+  }
+  34.8982785603%, 35.6797511737% {
+    content: "​ui/";
+    content: "​ui/"/"product";
+    alt: "product";
+  }
+  35.6807511737%, 36.4622237872% {
+    content: "​ui/u";
+    content: "​ui/u"/"product";
+    alt: "product";
+  }
+  36.4632237872%, 53.5201267606% {
+    content: "​ui/ux";
+    content: "​ui/ux"/"product";
+    alt: "product";
+  }
+  53.5211267606%, 54.1461048513% {
+    content: "​ui/u";
+    content: "​ui/u"/"product";
+    alt: "product";
+  }
+  54.1471048513%, 54.7720829421% {
+    content: "​ui/";
+    content: "​ui/"/"product";
+    alt: "product";
+  }
+  54.7730829421%, 55.3980610329% {
+    content: "​ui";
+    content: "​ui"/"product";
+    alt: "product";
+  }
+  55.3990610329%, 56.0240391236% {
+    content: "​u";
+    content: "​u"/"product";
+    alt: "product";
+  }
+  56.0250391236%, 63.8487652582% {
+    content: "​";
+    content: "​"/"product";
+    alt: "product";
+  }
+  63.8497652582%, 64.6312378717% {
+    content: "​(";
+    content: "​("/"product";
+    alt: "product";
+  }
+  64.6322378717%, 65.4137104851% {
+    content: "​(e";
+    content: "​(e"/"product";
+    alt: "product";
+  }
+  65.4147104851%, 66.1961830986% {
+    content: "​(e)";
+    content: "​(e)"/"product";
+    alt: "product";
+  }
+  66.1971830986%, 66.9786557121% {
+    content: "​(e)m";
+    content: "​(e)m"/"product";
+    alt: "product";
+  }
+  66.9796557121%, 67.7611283255% {
+    content: "​(e)mo";
+    content: "​(e)mo"/"product";
+    alt: "product";
+  }
+  67.7621283255%, 68.543600939% {
+    content: "​(e)mot";
+    content: "​(e)mot"/"product";
+    alt: "product";
+  }
+  68.544600939%, 69.3260735524% {
+    content: "​(e)moti";
+    content: "​(e)moti"/"product";
+    alt: "product";
+  }
+  69.3270735524%, 70.1085461659% {
+    content: "​(e)motio";
+    content: "​(e)motio"/"product";
+    alt: "product";
+  }
+  70.1095461659%, 87.1664491393% {
+    content: "​(e)motion";
+    content: "​(e)motion"/"product";
+    alt: "product";
+  }
+  87.1674491393%, 87.79242723% {
+    content: "​(e)motio";
+    content: "​(e)motio"/"product";
+    alt: "product";
+  }
+  87.79342723%, 88.4184053208% {
+    content: "​(e)moti";
+    content: "​(e)moti"/"product";
+    alt: "product";
+  }
+  88.4194053208%, 89.0443834116% {
+    content: "​(e)mot";
+    content: "​(e)mot"/"product";
+    alt: "product";
+  }
+  89.0453834116%, 89.6703615023% {
+    content: "​(e)mo";
+    content: "​(e)mo"/"product";
+    alt: "product";
+  }
+  89.6713615023%, 90.2963395931% {
+    content: "​(e)m";
+    content: "​(e)m"/"product";
+    alt: "product";
+  }
+  90.2973395931%, 90.9223176839% {
+    content: "​(e)";
+    content: "​(e)"/"product";
+    alt: "product";
+  }
+  90.9233176839%, 91.5482957746% {
+    content: "​(e";
+    content: "​(e"/"product";
+    alt: "product";
+  }
+  91.5492957746%, 92.1742738654% {
+    content: "​(";
+    content: "​("/"product";
+    alt: "product";
+  }
+  92.1752738654%, 100% {
+    content: "​";
+    content: "​"/"product";
+    alt: "product";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+.input-wrapper > input:focus + .placeholder, .input-wrapper > input:active + .placeholder {
+  display: none;
+}/*# sourceMappingURL=main-s.css.map */
