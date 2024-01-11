@@ -323,7 +323,7 @@ a:hover, a:focus {
 
 @font-face {
   src: url("../fonts/DrukWideBold.woff") format("woff");
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   font-weight: 700;
   font-style: bold;
   font-display: swap;
@@ -4161,7 +4161,7 @@ a:hover, a:focus {
 
 .statistics__item-value {
   margin-bottom: 16px;
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   font-size: 48px;
   font-weight: 500;
   line-height: 1;
@@ -4822,7 +4822,7 @@ a:hover, a:focus {
 }
 
 .creative-hero__title {
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   margin: 0 0 6px;
   max-width: 160px;
   font-size: 36px;
@@ -6890,7 +6890,7 @@ a:hover, a:focus {
 
 .portfolio-section__title {
   margin: 0;
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   font-size: 32px;
   font-weight: 300;
   line-height: 1.3125;
@@ -7302,7 +7302,7 @@ a:hover, a:focus {
 .first-banner__title {
   position: relative;
   margin-bottom: 0;
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   font-size: 45px;
   line-height: 110%;
   color: #ffffff;
@@ -9467,7 +9467,7 @@ a:hover, a:focus {
   display: grid;
   margin: 0 0 24px;
   font-size: 42px;
-  font-family: "Druk";
+  font-family: "Druk Wide Bold";
   font-weight: 500;
   line-height: 0.95;
   color: #000000;
@@ -10475,7 +10475,7 @@ a:hover, a:focus {
 
 .footer__title {
   margin-bottom: 16px;
-  font-family: 'Druk';
+  font-family: 'Druk Wide Bold';
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
