@@ -1035,3 +1035,57 @@ window.onload = function() {
 	css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ff3333}";
 	document.body.appendChild(css);
 };
+
+
+
+
+var arrLang = {
+	"pt-br": {
+	  "HOME": "Home",
+	  "PROJ": "Projetos",
+	  "SOBRE": "Sobre",
+	  "SERV": "Serviços",
+	  "btn-explorar": "Explorar",
+	  "text-home": "Alio minhas habilidades às minhas formações nas áreas do Design e da História para, com devido rigor, analisar as particularidades do produto e das pessoas. Assim, cada contexto definirá os caminhos, tecnologias e frameworks necessários.",
+	  "projeto-2": "fluxo de avaliação",
+	  "projeto-4": "fluxo de serviços financeiros",
+	  "projeto-3": "website MekPet",
+	  "vertodos": "ver todos",
+	  "conhecer": "conhecer mais",
+	  "others": "Outros projetos",
+	  "dpv-oth-text": "Trabalhos mais antigos, tanto em UX/UI quanto em outros campos do Design, podem ser conferidos em:"
+
+	},
+	"en-us": {
+	  "HOME": "Home",
+	  "PROJ": "Projects",
+	  "SOBRE": "About",
+	  "SERV": "Services",
+	  "btn-explorar": "Explore",
+	  "text-home": "I align my design habilities às minhas formações nas áreas do Design e da História para, com devido rigor, analisar as particularidades do produto e das pessoas. Assim, cada contexto definirá os caminhos, tecnologias e frameworks necessários.",
+	  "projeto-2": "evaluation survey flow",
+	  "projeto-4": "financial services UI/UX",
+	  "projeto-3": "MekPet website",
+	  "vertodos": "see more",
+	  "conhecer": "know me",
+	  "others": "Other projects",
+	  "pv-oth-text": "Feel free to check some of my older works on UI/UX and other subfields of Design:"
+	}
+  };
+
+  $(document).ready(function() {
+	// The default language is Portuguese
+	var lang = "pt-br";
+	$(".lang").each(function(index, element) {
+	  $(this).text(arrLang[lang][$(this).attr("key")]);
+	});
+  });
+
+  // get/set the selected language
+  $(".translate").click(function() {
+	var lang = $(this).attr("id");
+
+	$(".lang").each(function(index, element) {
+	  $(this).text(arrLang[lang][$(this).attr("key")]);
+	});
+  });
