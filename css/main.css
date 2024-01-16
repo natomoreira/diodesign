@@ -4749,10 +4749,17 @@ a:hover, a:focus {
 
 /* 3.13 Hero section in creative homepage */
 .creative-hero {
-  padding: 100px 0 70px;
+  padding: 105px 0 70px;
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 575px) {
+  .creative-hero {
+    flex-direction: column;
+  }
+}
+
 
 @media (max-width: 992px) {
   .creative-hero {
@@ -4769,7 +4776,13 @@ a:hover, a:focus {
 
 @media (min-width: 1200px) {
   .creative-hero {
-    padding-top: 150px;
+    padding: 120px 0 125px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .creative-hero {
+    padding: 140px 0 50px;
   }
 }
 
@@ -4827,6 +4840,12 @@ a:hover, a:focus {
   margin: 0 0 50px;
 }
 
+@media (max-width: 575px) {
+  .creative-hero__wrap {
+    margin: 11px 0 48px;
+  }
+}
+
 .creative-hero__title {
   font-family: "Druk Wide Bold";
   margin: 0 0 6px;
@@ -4844,7 +4863,7 @@ a:hover, a:focus {
     font-size: 52px;
   }
   .creative-hero__wrap {
-    margin-top: 92px;
+    margin-top: 0;
     margin-bottom: 56px;
   }
 }
@@ -11180,7 +11199,7 @@ a:hover, a:focus {
 
 @media (max-width: 575px) {
   .creative-hero__container {
-    height: 237px;
+    height: 300px;
     align-items:center;
   }
   .creative-hero__image {
@@ -11190,7 +11209,6 @@ a:hover, a:focus {
     bottom: 208px;
   }
   .creative-hero__btn {
-    top: 40px;
     position: relative;
     float: inline-end;
   }
@@ -11199,7 +11217,6 @@ a:hover, a:focus {
     font-size: calc(0.13 * 100vw + 1.69231px);
   }
   .creative-hero__main {
-    top: 60%;
     min-width: -webkit-fill-available;
     width: auto;
   }
@@ -11415,6 +11432,7 @@ svg:hover .textcircle {
   width: 292px;
   height: 292px;
   display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 575px) {
@@ -11424,6 +11442,9 @@ svg:hover .textcircle {
     left: -22px;
     max-width: 75%;
     margin-top: 374px;
+  }
+  .hero-img {
+    display: none;
   }
 }
 
@@ -11858,7 +11879,7 @@ a.fill-div {
 @media (min-width: 992px) {
   .idiomas {
     display: flex;
-    gap: 32px;
+    gap: 40px;
     flex-direction: row;
     justify-content: flex-end;
     padding: 24px 0;
@@ -11901,7 +11922,7 @@ a.fill-div {
 .btn-idioma {
   display: flex;
   gap: 16px;
-  min-width: 157px;
+  /*min-width: 157px;*/
   max-width: fit-content;
   cursor: pointer;
   background-color: transparent;
@@ -12090,9 +12111,93 @@ a.fill-div {
 }*/
 
 .texto-intro {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.5;
   color: #000000;
+  letter-spacing: 4px;
+}
+
+.texto-intro span {
+  font-weight: 600;
+}
+
+.text2-hero {
+  display: none;
+}
+
+.intro-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero-pt2 {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.hero-pt2 p {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .hero-pt2 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .intro-mobile {
+    display: none
+  }
+  .hero-img--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-pt2 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    max-width: 545px;
+  }
+  .text2-hero {
+    display: block;
+    text-align: right;
+    flex: 1 0 0;
+  }
+  .intro-mobile {
+    display: none
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-pt2 {
+    max-width: 681px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-pt2 {
+    max-width: 770px;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .hero-img--mobile {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 23px;
+  }
+  
+  .hero-img--mobile img {
+    position: relative;
+    max-width: 50%;
+    right: -40px;
+  }
 }
