@@ -11455,7 +11455,7 @@ svg:hover .textcircle {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .creative-hero__image-V2 {
     top: -55px;
   }
@@ -11463,40 +11463,35 @@ svg:hover .textcircle {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .creative-hero__image-V2 {
-    width: 400px;
-    height: 400px;
     top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .creative-hero__image-V2 img {
+    width: 292px;
+    height: fit-content;
+  }
 }
 
 @media (min-width: 1400px) {
   .creative-hero__image-V2 {
-    width: calc(66.6666% - 294px);
+    width: calc(56.6666% - 294px);
     left: 0;
-    bottom: 15%;
+    height: 515px;
+    max-height: fit-content;
+    justify-content: center;
   }
-  /*.creative-hero__image-V2 img {
-    position: relative;
-    top: 268px;
-  }*/
+  .creative-hero__image-V2 img {
+    width: auto;
+  }
 }
 
 .creative-hero__image-V2 img {
   /* height: auto; */
   vertical-align: top;
-  flex-shrink: 0;
   /* float: right; */
   mix-blend-mode: multiply;
-}
-
-@media (min-width: 1200px) {
-  .creative-hero__image-V2 img {
-    width: 100%;
-    height: fit-content;
-  }
 }
 
 
@@ -12200,4 +12195,12 @@ a.fill-div {
     max-width: 50%;
     right: -40px;
   }
+}
+
+.naming {
+  background: #000000;
+  color: #ffffff;
+  width: fit-content;
+  padding: 0 5px;
+  margin-bottom: 12px;
 }
