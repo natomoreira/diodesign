@@ -16,6 +16,7 @@
   <!-- CSS-->
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/main-s.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -342,9 +343,9 @@
 
           </section>
 
-          <section class="portfolio-section major_section">
+          <section class="portfolio-section major_section" id="portfoliosection">
             <a id="projects"></a>
-            <header class="portfolio-section__header row align-items-end">
+            <header class="titles portfolio-section__header row align-items-end">
               <div class="text-right">
                 <h2 class="portfolio-section__title " key="PROJ">projetos</h2>
               </div>
@@ -353,7 +354,7 @@
               <li class="portfolio-section__item __js_masonry-item">
                 <a class="project-preview project-preview--elastic project-preview--vertical" href="projeto-1.html">
                   <span class="project-preview__image">
-                    <img src="img/ecomm.jpg" alt="novo ecomm">
+                    <img class="thumbnail" src="img/ecomm.jpg" alt="novo ecomm">
                   </span>
                   <span class="project-preview__bottom">
                     <span class="project-preview__title">e-comm design</span>
@@ -368,7 +369,7 @@
               <li class="portfolio-section__item __js_masonry-item">
                 <a class="project-preview project-preview--elastic project-preview" href="projeto-2.html">
                   <span class="project-preview__image">
-                    <img src="img/aval.jpg" width="531" height="417" alt="fluxo de avaliacao">
+                    <img class="thumbnail_2" src="img/aval.jpg" width="531" height="417" alt="fluxo de avaliacao">
                   </span>
                   <span class="project-preview__bottom">
                     <span class="project-preview__title " key="projeto-2">fluxo de avaliação</span>
@@ -383,7 +384,7 @@
               <li class="portfolio-section__item __js_masonry-item">
                 <a class="project-preview project-preview--elastic project-preview" href="projeto-4.html">
                   <span class="project-preview__image">
-                    <img src="img/financeiro.jpg" width="531" height="417" alt="fluxo de serviços financeiros">
+                    <img class="thumbnail_3" src="img/financeiro.jpg" width="531" height="417" alt="fluxo de serviços financeiros">
                   </span>
                   <span class="project-preview__bottom">
                     <span class="project-preview__title " key="projeto-4">fluxo de serviços financeiros</span>
@@ -398,7 +399,7 @@
               <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
                 <a class="project-preview project-preview--elastic project-preview" href="projeto-3.html">
                   <span class="project-preview__image4 project-preview__image">
-                    <img src="img/mek.jpg" alt="website MekPet">
+                    <img class="thumbnail_4" src="img/mek.jpg" alt="website MekPet">
                   </span>
                   <span class="project-preview__bottom">
                     <span class="project-preview__title " key="projeto-3">website MekPet</span>
@@ -449,7 +450,7 @@
           </div>
 
           <section class="about-video-section about-video-section--pb-0 major_section">
-            <header class="portfolio-section__header row align-items-end">
+            <header class="titles portfolio-section__header row align-items-end">
               <div class="text-right">
                 <h2 class="portfolio-section__title " key="SOBRE">Sobre</h2>
               </div>
@@ -457,8 +458,10 @@
             <div class="about-video-section__container container services-section__container--small">
               <div class="row">
                 <div class="about-video-section__main col-12 col-md">
-                  <div class="about-video-section__title about-video-section__title--size-small " data-aos="fade-up" key="text-home">Alio minhas habilidades às minhas formações nas áreas do Design e da História para, com devido rigor, analisar as particularidades do produto e das pessoas. Assim, cada contexto definirá os caminhos, tecnologias e frameworks necessários.</div>
-                  <a class="btn-secondary" href="sobre.html">
+                  <div class="titles about-video-section__title about-video-section__title--size-small" key="text-home">
+                    Alio minhas habilidades às minhas formações nas áreas do Design e da História para, com devido rigor, analisar as particularidades do produto e das pessoas. Assim, cada contexto definirá os caminhos, tecnologias e frameworks necessários.
+                  </div>
+                  <a class="titles btn-secondary" href="sobre.html">
                     <span class="btn__text " key="conhecer">conhecer mais</span>
                     <span class="btn__icon">
                       <svg width="19" height="19">
@@ -467,8 +470,8 @@
                     </span>
                   </a>
                 </div>
-                <div class="about-video-section__aside col-12 col-md order-first order-md-0" data-aos="fade-up">
-                  <div class="about-video-section__video video-block">
+                <div class="about-video-section__aside col-12 col-md order-first order-md-0">
+                  <div class="thumbnail_3 about-video-section__video video-block">
                     <img src="img/diow.jpg" width="810" height="539" alt="About us video">
                     <!--<a class="video-block__btn play-btn" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" aria-label="Play button">
                       <svg width="17" height="19">
@@ -479,58 +482,22 @@
                 </div>
               </div>
             </div>
-            <!--<div class="about-video-section__statistics statistics">
-              <div class="statistics__container container">
-                <div class="row justify-content-between">
-                  <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                    <div class="statistics__item-value">
-                      <span class="__js_number" data-end-value="25">0</span>
-                    </div>
-                    <div class="statistics__item-text">managers</div>
-                  </div>
-                  <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                    <div class="statistics__item-value">
-                      <span class="__js_number" data-end-value="200">0</span>
-                    </div>
-                    <div class="statistics__item-text">the person
-                      <br>in the team
-                    </div>
-                  </div>
-                  <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                    <div class="statistics__item-value">
-                      <span class="__js_number" data-end-value="9">0</span>
-                    </div>
-                    <div class="statistics__item-text">anos
-                      <br>de experiência
-                    </div>
-                  </div>
-                  <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                    <div class="statistics__item-value">
-                      <span class="__js_number" data-end-value="7">0</span>
-                    </div>
-                    <div class="statistics__item-text">awards and
-                      <br>accolades
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>-->
           </section>
 
           <section class="services-section major_section">
-            <header class="portfolio-section__header row align-items-end">
+            <header class="titles portfolio-section__header row align-items-end">
               <div class="text-right">
                 <h2 class="portfolio-section__title " key="SERV">Serviços</h2>
               </div>
             </header>
             <div class="services-section__container services-section__container--small">
               <div class="services-section__main">
-                <div class="services-section__image" data-aos="fade-up">
+                <div class="services-section__image">
                   <img src="img/notion-v2.jpg" width="823" height="417" alt="">
                 </div>
                 <div class="services-section__menu">
                   <ul class="services-section__list">
-                    <li class="services-section__item" data-aos="fade-up">
+                    <li class="titles services-section__item">
                       <a class="services-section__link">Product design<span>
                           <!--<svg width="24" height="23">
                             <use xlink:href="#link-arrow2"></use>
@@ -538,17 +505,17 @@
                         </span>
                       </a>
                     </li>
-                    <li class="services-section__item" data-aos="fade-up">
+                    <li class="titles services-section__item">
                       <a class="services-section__link">UI/UX<span>
                         </span>
                       </a>
                     </li>
-                    <li class="services-section__item" data-aos="fade-up">
+                    <li class="titles services-section__item">
                       <a class="services-section__link">Web design e front-end<span>
                         </span>
                       </a>
                     </li>
-                    <li class="services-section__item" data-aos="fade-up">
+                    <li class="titles services-section__item">
                       <a class="services-section__link">Motion design<span>
                         </span>
                       </a>
@@ -631,7 +598,7 @@
   <script src="js/libs/packery-mode.pkgd.min.js"></script>
   <script src="js/libs/jquery.pagepiling.js"></script>
   <script src="js/libs/simpleParallax.min.js"></script>
-  <!-- JavaScript-->
+  <!-- JavaScript--> 
   <script src="js/main.js"></script>
 </body>
 
