@@ -96,6 +96,7 @@
 @import url("jquery.pagepiling.css");
 @import url("jquery.fancybox.css");
 /*** 1. GLOBAL ***/
+
 /* 1.1 General */
 html,
 body {
@@ -111,6 +112,8 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
+  --transition: transform .75s cubic-bezier(0.75,0.5, 0, 1);
+
 }
 
 @media (min-width: 992px) {
@@ -129,6 +132,10 @@ html {
   }
   html ::-webkit-scrollbar-thumb {
     background-color: #FC3C3C;
+    border-radius: none;
+  }
+  html ::-webkit-scrollbar-thumb:hover {
+    background-color: #ad2c2c;
     border-radius: none;
   }
   html ::-webkit-scrollbar-corner {
@@ -11477,7 +11484,6 @@ svg:hover .textcircle {
 @media (min-width: 1400px) {
   .creative-hero__image-V2 {
     width: calc(56.6666% - 294px);
-    left: 0;
     height: 515px;
     max-height: fit-content;
     justify-content: center;
@@ -12203,4 +12209,36 @@ a.fill-div {
   width: fit-content;
   padding: 0 5px;
   margin-bottom: 12px;
+}
+
+
+
+
+.titles {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.titles--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.thumbnail, .thumbnail_3 {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 2s ease;
+}
+
+.thumbnail_2, .thumbnail_4 {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 2s ease;
+}
+
+.thumbnail--visible {
+  transform: translateX(0);
+  opacity: 1;
 }
