@@ -12097,9 +12097,6 @@ a.fill-div {
   }
 }
 
-.header__panel--about .header__logo svg {
-  fill: #ffffff;
-}
 
 .header__panel--about .btn-idioma-header .btn__text {
   color: #ffffff;
@@ -12109,6 +12106,8 @@ a.fill-div {
 .header__panel--about .menu-toggle::before,
 .header__panel--about .menu-toggle::after {
   border-top-color: #ffffff;
+.header__panel--about .header__logo svg {
+  fill: #ffffff;}
 }*/
 
 .texto-intro {
